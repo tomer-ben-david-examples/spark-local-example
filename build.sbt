@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-name := "scala-invent-monads"
+name := "scala-local-example"
 
 version := "0.1"
 
@@ -34,7 +34,7 @@ scalacOptions ++= Seq(
   , "-Yno-adapted-args"     // Do not adapt an argument list to match the receiver
   , "-Ywarn-dead-code"      // Warn when dead code is identified
 // Not really useful
-//  , "-Ywarn-numeric-widen"  // Warn when numerics are widened
+  , "-Ywarn-numeric-widen"  // Warn when numerics are widened
   , "-Ywarn-unused"         // Warn when local and private vals, vars, defs, and types are are unused
   , "-Ywarn-unused-import"  // Warn when imports are unused
   , "-Ywarn-value-discard"  // Warn when non-Unit expression results are unused
@@ -75,6 +75,8 @@ libraryDependencies ++= Seq(
   , "org.scalamock"                    %% "scalamock-scalatest-support"      % "3.2.1"        % Test
   , "org.scalatest"                    %% "scalatest"                        % "2.2.4"        % Test
   , "org.seleniumhq.selenium"           % "selenium-java"                    % "2.45.0"       % Test
+  , "org.apache.spark" % "spark-core_2.11" % "1.3.1"
+
 )
 
 // Improved incremental compilation
