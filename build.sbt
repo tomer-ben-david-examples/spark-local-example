@@ -76,6 +76,7 @@ libraryDependencies ++= Seq(
   , "org.scalatest"                    %% "scalatest"                        % "2.2.4"        % Test
   , "org.seleniumhq.selenium"           % "selenium-java"                    % "2.45.0"       % Test
   , "org.apache.spark" % "spark-core_2.11" % "1.3.1"
+  , "com.quantifind" %% "wisp" % "0.0.4"
 
 )
 

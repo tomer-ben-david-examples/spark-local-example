@@ -17,4 +17,10 @@ object Example {
         println("Lines with a: %s, Lines with b: %s".format(numAs, numBs))
         println(logData.first())
     }
+
+    // to plot a graph simply
+//    scala> import com.quantifind.charts.Highcharts._
+//    import com.quantifind.charts.Highcharts._
+//
+//    scala> line(0 to 10)
 }
