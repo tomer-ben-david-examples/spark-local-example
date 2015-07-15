@@ -29,8 +29,8 @@ object SparkExampleWriteSeqLZO {
         val sc = new SparkContext(conf)
         val input = Seq(("coffee", 1), ("coffee", 2), ("pandas", 3))
         val inputRDD = sc.parallelize(input)
-        val outputRDD = inputRDD.map(new ConvertToWritableTypes())
-//        rdd.saveAsHadoopFile(dir, classOf[Text], classOf[IntWritable], classOf[SequenceFileOutputFormat[_,_]])
+        inputRDD.saveAsSequenceFile(dir)
+//        inputRDD.saveAsHadoopFile(dir, classOf[Text], classOf[IntWritable], classOf[SequenceFileOutputFormat[_,_]])
     }
 
     def recreateDirectory(path: String): Path = {
