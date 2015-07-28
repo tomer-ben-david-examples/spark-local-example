@@ -6,3 +6,15 @@ The examples can be run smoothly in intellij.
 
 # Examples and csv file analysis locally
 
+If you get `java.lang.UnsatisfiedLinkError: no gplcompression in java.library.path`
+then:
+
+https://code.google.com/a/apache-extras.org/p/hadoop-gpl-compression/downloads/list
+
+
+https://github.com/toddlipcon/hadoop-lzo
+
+```
+sudo apt-get install liblzo2-dev
+[building lzo](https://code.google.com/a/apache-extras.org/p/hadoop-gpl-compression/wiki/FAQ)
+```
