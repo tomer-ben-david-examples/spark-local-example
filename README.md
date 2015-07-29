@@ -4,7 +4,7 @@ So you wish to study spark, great! now lets start a spark cluster, just download
 # Study spark inside intellij
 The examples can be run smoothly in intellij.
 
-# Examples and csv file analysis locally
+# Troubleshoting
 
 If you get `java.lang.UnsatisfiedLinkError: no gplcompression in java.library.path`
 then do the following:
