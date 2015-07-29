@@ -5,7 +5,7 @@
 
 import org.apache.spark.{SparkConf, SparkContext}
 
-object Example {
+object ExampleSparkReadCSV {
     def main(args: Array[String]) {
         val logFile = "/home/tomerb/Downloads/donation/block_1.csv" // Change this to wherever your csv is.
         val conf = new SparkConf().setAppName("Simple Application")
