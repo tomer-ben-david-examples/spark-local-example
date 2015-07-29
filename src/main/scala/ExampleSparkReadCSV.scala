@@ -7,7 +7,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 object Example {
     def main(args: Array[String]) {
-        val logFile = "/home/tomerb/Downloads/donation/block_1.csv" // Should be some file on your system
+        val logFile = "/home/tomerb/Downloads/donation/block_1.csv" // Change this to wherever your csv is.
         val conf = new SparkConf().setAppName("Simple Application")
               .setMaster("local[2]")
         val sc = new SparkContext(conf)
@@ -17,10 +17,4 @@ object Example {
         println("Lines with a: %s, Lines with b: %s".format(numAs, numBs))
         println(logData.first())
     }
-
-    // to plot a graph simply
-//    scala> import com.quantifind.charts.Highcharts._
-//    import com.quantifind.charts.Highcharts._
-//
-//    scala> line(0 to 10)
 }
