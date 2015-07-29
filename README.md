@@ -9,9 +9,9 @@ The examples can be run smoothly in intellij.
 If you get `java.lang.UnsatisfiedLinkError: no gplcompression in java.library.path`
 then do the following:
 
-1. I ran this script: https://github.com/RevolutionAnalytics/rmr2/blob/master/pkg/tools/whirr/lzo-ubuntu.sh
+1. I ran this script: [https://github.com/RevolutionAnalytics/rmr2/blob/master/pkg/tools/whirr/lzo-ubuntu.sh]
 1. This command in script "ant package" failed so i had to patch the build.xml as described here (otherwise failed) https://github.com/twitter/hadoop-lzo/issues/35 only then "ant package" finished successfully`
-1. When running the test I added this jvm param: -Djava.library.path=/usr/lib/hadoop/lib/native
+1. When running the test I added this jvm param: `-Djava.library.path=/usr/lib/hadoop/lib/native`
 1. sudo apt-get install lzo lzo-devel hadoop-lzo hadoop-lzo-native
 
 
